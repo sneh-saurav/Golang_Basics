@@ -28,7 +28,7 @@ func (m myvalue) Volume() float64 {
 	return 3.14 * m.radius * m.radius * m.height
 }
 
-// Main Method
+
 func main() {
 
 	// Accessing elements of
