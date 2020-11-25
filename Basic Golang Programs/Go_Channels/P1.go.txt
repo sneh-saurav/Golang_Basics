@@ -1,0 +1,20 @@
+package main
+
+import (
+	"fmt"
+)
+
+func myfun(ch chan int) {
+
+	fmt.Println(234 + <-ch)
+}
+func main() {
+	fmt.Println("Start main method")
+	var ch = make(chan int)
+
+	go myfun(ch)
+	ch <- 23
+
+	fmt.Print("End of main method")
+
+}

@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main() {
+	studentMarks := map[string]int{
+		"Sneh":   850,
+		"Saurav": 841,
+		"Rahul":  864,
+	}
+	studentMarks["Abhishek"] = 970
+	delete(studentMarks, "Rahul")
+	fmt.Println("Printing value of key Rahul", studentMarks["Rahul"])
+	fmt.Println("Checking with wrong key name i.e  Snh:   ", studentMarks["Snh"])
+	check, ok := studentMarks["Sneh"]
+	fmt.Print("Checking with correct key name i.e  Sneh  :    ", check, ok)
+}
+
+

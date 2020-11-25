@@ -1,0 +1,24 @@
+WAP to print the pattern
+*
+* *
+* * *
+* * * *
+* * * * *
+
+
+
+package main
+
+import "fmt"
+
+func main() {
+	var i int
+	var j int
+	for i = 0; i <= 5; i++ {
+		for j = 0; j < i; j++ {
+			fmt.Print("* ")
+		}
+		fmt.Print("\n")
+	}
+
+}

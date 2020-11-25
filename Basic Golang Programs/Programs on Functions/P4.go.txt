@@ -1,0 +1,24 @@
+WAP to Swap between two numbers using functions.
+
+
+package main
+
+import "fmt"
+
+func swap(x, y int) (int, int) {
+	fmt.Printf("Before swapping the value of x an y is :  %d and %d", x, y)
+	fmt.Println("")
+	var temp int
+	temp = x
+	x = y
+	y = temp
+	fmt.Printf("After swapping the value of x and y is :  %d and %d", x, y)
+	return x, y
+
+}
+
+func main() {
+	swap(2, 7)
+
+}
+

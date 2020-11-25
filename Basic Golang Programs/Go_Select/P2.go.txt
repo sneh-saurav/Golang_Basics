@@ -1,0 +1,21 @@
+package main
+
+import (
+	"fmt"
+)
+
+func def(ch chan int) {
+	ch <- 50
+}
+
+func main() {
+	var ch = make(chan int)
+	go def(ch)
+
+	select {
+	case <-ch:
+	default:
+		fmt.Println("Not Found")
+	}
+
+}

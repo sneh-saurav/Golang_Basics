@@ -1,0 +1,22 @@
+WAP to find factorial of a number using functions.
+
+
+
+
+package main
+
+import "fmt"
+
+func fact(x int) int {
+	var f = 1
+	for x = 1; x <= 6; x++ {
+		f = f * x
+	}
+	return f
+}
+
+func main() {
+
+	var result = fact(6)
+	fmt.Print(result)
+}

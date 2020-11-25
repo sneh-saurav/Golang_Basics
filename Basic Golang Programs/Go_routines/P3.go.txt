@@ -1,0 +1,14 @@
+package main
+
+import "fmt"
+
+func display(str string) {
+	var i int
+	for i = 0; i < 6; i++ {
+		fmt.Println(str)
+	}
+}
+func main() {
+	display("SNEH")
+	go display("SAURAV")   
+}

@@ -1,0 +1,17 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var ch = make(chan string, 4)
+
+	ch <- "SNEH"
+	ch <- "SAURAV"
+	ch <- "RAHUL"
+	ch <- "AMAN"
+	close(ch)
+	fmt.Println("Lenght of the channel is", len(ch))
+
+}

@@ -1,0 +1,12 @@
+package main 
+
+import "fmt"
+
+func main() { 
+
+		// taking a pointer 
+	var s *int
+	
+	// displaying the result 
+	fmt.Println("s = ", s) 
+} 

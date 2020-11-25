@@ -1,0 +1,12 @@
+package main
+
+import "fmt"
+
+func main() {
+	studentMarks := map[string]int{
+		"Sneh":   850,
+		"Saurav": 841,
+		"Rahul":  864,
+	}
+	fmt.Print(studentMarks["Rahul"])
+}

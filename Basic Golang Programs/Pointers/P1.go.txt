@@ -1,0 +1,19 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var x = 0xFF
+	y := 0x9C
+
+	fmt.Printf("%T \n", x)
+	fmt.Printf("%X \n", x)
+	fmt.Printf("%v \n", x)
+
+	fmt.Printf("%T \n", y)
+	fmt.Printf("%X \n", y)
+	fmt.Printf("%v \n", y)
+}
+

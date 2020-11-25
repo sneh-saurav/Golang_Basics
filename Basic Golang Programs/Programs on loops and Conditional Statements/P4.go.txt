@@ -1,0 +1,20 @@
+WAP to print n natural numbers.
+
+
+
+
+
+package main
+
+import "fmt"
+
+func main() {
+	var i int
+	var n int
+	fmt.Print("Enter the value of n : ")
+	fmt.Scanf("%d", &n)
+	for i = 1; i <= n; i++ {
+		fmt.Println(i)
+	}
+
+}

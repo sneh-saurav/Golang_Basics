@@ -1,0 +1,24 @@
+package main
+
+import "fmt"
+
+type Animal struct {
+	Name   string
+	Origin string
+}
+
+type Bird struct {
+	Animal
+	Speed  float32
+	canFly bool
+}
+
+func main() {
+	a := Bird{}
+	a.Name = "Parrot"
+	a.Origin = "India"
+	a.Speed = 30
+	a.canFly = false
+	fmt.Print(a)
+
+}

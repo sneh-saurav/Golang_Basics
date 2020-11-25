@@ -1,0 +1,15 @@
+package main
+
+import (
+	"fmt"
+)
+
+func sending(ch chan<- string) {
+	ch <- "SNEH SAURAV"
+}
+func main() {
+	var ch = make(chan string)
+	go sending(ch)
+
+	fmt.Println(<-ch)
+}

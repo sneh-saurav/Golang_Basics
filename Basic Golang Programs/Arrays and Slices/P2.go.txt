@@ -1,0 +1,21 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var a = []int{}
+	fmt.Println(a)
+	fmt.Println("Lenght ", len(a))
+	fmt.Println("Capacity ", cap(a))
+	a = append(a, 1)
+	fmt.Println(a)
+	fmt.Println("Lenght ", len(a))
+	fmt.Println("Capacity ", cap(a))
+	a = append(a, 2, 3, 4, 5)
+	fmt.Println(a)
+	fmt.Println("Lenght ", len(a))
+	fmt.Print("Capacity ", cap(a))
+
+}

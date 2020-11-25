@@ -1,0 +1,19 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var ch = make(chan string)
+	go func() {
+		ch <- "SNEH"
+		ch <- "SAURAV"
+		ch <- "BITTU"
+		ch <- "TUTU"
+		close(ch)
+	}()
+	for res := range ch {
+		fmt.Println(res)
+	}
+}

@@ -1,0 +1,25 @@
+WAP to print the pattern
+
+1
+12
+123
+1234
+12345
+
+
+
+package main
+
+import "fmt"
+
+func main() {
+	var i int
+	var j int
+	for i = 1; i <= 5; i++ {
+		for j = 1; j <= i; j++ {
+			fmt.Print(j)
+		}
+		fmt.Print("\n")
+	}
+
+}

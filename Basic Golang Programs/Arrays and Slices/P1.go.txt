@@ -1,0 +1,24 @@
+Printing the Slice
+
+
+
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var i = []int{1, 2, 3, 4, 5}
+	//var j = &i
+	//j[1] = 9
+	fmt.Printf("%v \n", i[:])
+	fmt.Printf("%v \n", i[0:4])
+	fmt.Printf("%v \n", i[2:4])
+	fmt.Printf("%v \n", i[:6])
+	//fmt.Printf("%v", j)
+	//fmt.Printf("The length of the slice i is %v \n", len(i))
+	//fmt.Printf("The capacity of the slice i is %v", cap(i))
+
+}

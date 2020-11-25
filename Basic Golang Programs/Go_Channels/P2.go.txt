@@ -1,0 +1,26 @@
+package main
+
+import "fmt"
+
+func myfun(ch chan string) {
+	for v := 0; v < 4; v++ {
+		ch <- "Wecome to my Channel"
+	}
+	close(ch)
+
+}
+
+func main() {
+	var ch = make(chan string)
+	go myfun(ch)
+
+	for {
+		res, ok := <-ch
+		if ok == false {
+			fmt.Println("The channel is closed  ", ok)
+			break
+		}
+		fmt.Println("The channel is Open  ", res, ok)
+	}
+
+}
